@@ -1,0 +1,16 @@
+# Dependencies
+/node_modules
+
+# Next.js build output
+/.next/
+/out/
+
+# Environment variables - never commit real secrets
+.env.local
+.env
+
+# The database file - contains real customer submissions, don't commit it
+/data/*.db
+
+# OS / editor
+.DS_Store
