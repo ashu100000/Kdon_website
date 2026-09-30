@@ -275,7 +275,7 @@ footer nav a:hover{color:var(--lane-white);}
   padding:48px 0 80px;
 }
 .admin-header{
-  display:flex;justify-content:space-between;align-items:flex-start;
+  display:flex;justify-content:space-between;align-items:center;
   gap:24px;flex-wrap:wrap;
   margin-bottom:32px;
   padding-bottom:24px;
@@ -283,14 +283,26 @@ footer nav a:hover{color:var(--lane-white);}
 }
 .admin-header h1{font-size:2rem;}
 .admin-count{color:var(--steel);font-size:0.92rem;margin-top:6px;}
-.admin-logout-btn{padding:10px 20px;font-size:0.88rem;}
+.admin-logout-btn{
+  padding:10px 20px;font-size:0.88rem;
+  color:var(--asphalt);border-color:var(--asphalt);background:transparent;
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:44px;
+}
+.admin-logout-btn:hover{
+  background:var(--asphalt);color:var(--lane-white);border-color:var(--asphalt);
+}
 .admin-table-wrap{
   overflow-x:auto;
   background:var(--lane-white);
   border:1px solid var(--line);
 }
 .admin-table{
-  width:100%;border-collapse:collapse;font-size:0.88rem;min-width:900px;
+  width:max-content;
+  min-width:100%;
+  border-collapse:collapse;
+  font-size:0.88rem;
+  table-layout:auto;
 }
 .admin-table th{
   text-align:left;padding:14px 16px;
@@ -298,11 +310,28 @@ footer nav a:hover{color:var(--lane-white);}
   font-family:var(--font-oswald),sans-serif;font-weight:500;font-size:0.8rem;
   letter-spacing:0.3px;text-transform:uppercase;
   white-space:nowrap;
+  overflow-wrap:break-word;
+}
+.admin-table th:nth-child(9), .admin-table td:nth-child(9){
+  width:360px;
+  min-width:260px;
+  color:var(--lane-white);
 }
 .admin-table td{
   padding:14px 16px;border-bottom:1px solid var(--line);
   vertical-align:top;color:var(--asphalt);
   max-width:220px;
+  overflow-wrap:anywhere;
+  word-break:break-word;
+  white-space:normal;
+  line-height:1.5;
+}
+.admin-table td:nth-child(9){
+  white-space:pre-line;
+  color:var(--asphalt);
+}
+.admin-table td:nth-child(9) * {
+  color:var(--asphalt);
 }
 .admin-table tr:last-child td{border-bottom:none;}
 .admin-table tr:hover td{background:var(--concrete-dim);}

@@ -5,8 +5,8 @@ import AdminLogoutButton from '@/components/AdminLogoutButton';
 
 export const dynamic = 'force-dynamic';
 
-export default function AdminPage() {
-  const cookieStore = cookies();
+export default async function AdminPage() {
+  const cookieStore = await cookies();
   const session = cookieStore.get('admin_session')?.value;
   const adminKey = process.env.ADMIN_KEY;
 
