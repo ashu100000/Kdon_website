@@ -126,7 +126,7 @@ nav.links a:hover{color:var(--asphalt);}
   padding:40px 28px;
 }
 .stats .wrap{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:24px;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
 }
 .stat b{
   display:block;font-family:var(--font-oswald),sans-serif;font-size:2.1rem;color:var(--amber);

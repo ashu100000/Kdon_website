@@ -39,7 +39,7 @@ export default function HomePage() {
           <h1>Freight that shows up when you said it would.</h1>
           <p className="lede">
             Dry van and flatbed hauling across New England and the Northeast. Family-run since
-            2023, still answering the phone at 2am.
+            2025, still answering the phone at 2am.
           </p>
           <div className="hero-actions">
             <a href="#contact" className="btn btn-amber">Request a Rate</a>
@@ -51,10 +51,9 @@ export default function HomePage() {
 
       <div className="stats">
         <div className="wrap">
-          <div className="stat"><b>340</b><span>Power units on the road</span></div>
+          <div className="stat"><b>29</b><span>Power units on the road</span></div>
           <div className="stat"><b>98.6%</b><span>On-time delivery, trailing 12mo</span></div>
-          <div className="stat"><b>31</b><span>States serviced weekly</span></div>
-          <div className="stat"><b>2023</b><span>Founded in Massachusetts</span></div>
+          <div className="stat"><b>2025</b><span>Founded in Massachusetts</span></div>
         </div>
       </div>
 
